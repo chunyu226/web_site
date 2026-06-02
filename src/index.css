@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --particle-node-color: rgba(14, 165, 233, 0.7);
+  --particle-line-color: rgba(56, 189, 248, 0.25);
+}
+
+.dark {
+  --particle-node-color: rgba(56, 189, 248, 0.6);
+  --particle-line-color: rgba(125, 211, 252, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
